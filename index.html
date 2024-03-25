@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Заголовок</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
+	<link rel="stylesheet" href="libs/fontawesome-free-5.12.0-web/css/all.min.css" />
+	<link rel="stylesheet" href="libs/fancybox-master/dist/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/main.css?ver=1.1" />
+	<link rel="stylesheet" href="css/media.css?ver=1.1" />
+</head>
+<body>
+
+	<div class="wrapper">
+
+		<div class="buttons-fixed">
+			<a href="#" class="btn-fixed">
+				<span class="btn-fixed__icon">
+					<img src="img/btn_fixed1.svg" alt="alt">
+				</span>
+				<div class="btn-fixed__title">Попали в ДТП</div>
+			</a>
+			<a href="#" class="btn-fixed btn-fixed_search">
+				<span class="btn-fixed__icon">
+					<img src="img/btn_fixed2.svg" alt="alt">
+				</span>
+				<div class="btn-fixed__title">Поиск</div>
+			</a>
+			<a href="#" class="btn-fixed btn-fixed_menu">
+				<span class="sandwich"></span>
+				<div class="btn-fixed__title">Меню</div>
+			</a>
+			<a href="#" class="btn-fixed">
+				<span class="btn-fixed__icon">
+					<img src="img/btn_fixed3.svg" alt="alt">
+				</span>
+				<div class="btn-fixed__title">Центры</div>
+			</a>
+			<a href="#" class="btn-fixed">
+				<span class="btn-fixed__icon">
+					<img src="img/btn_fixed4.svg" alt="alt">
+				</span>
+				<div class="btn-fixed__title">Калькулятор</div>
+			</a>
+		</div>
+
+		<div class="menu-mobile">
+			<div class="menu-mobile__close"></div>
+			<div class="menu-mobile__title">Меню</div>
+			<ul class="tabs-menu">
+				<li class="active"><a href="#tab_menu1">О компании</a></li>
+				<li><a href="#tab_menu2">Программы</a></li>
+			</ul>
+			<div class="tab-container-menu">
+				<div class="tab-pane-menu" id="tab_menu1">
+					<ul class="menu-mobile__list">
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Документы</a></li>
+						<li><a href="#">Центры страхования</a></li>
+						<li><a href="#">Агентам</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Утраченные бланки</a></li>
+						<li><a href="#">Вакансии</a></li>
+						<li><a href="#">Обратная связь</a></li>
+					</ul>
+				</div>
+				<div class="tab-pane-menu" id="tab_menu2">
+					<ul class="menu-mobile__list">
+						<li><a href="#">Для частных лиц</a></li>
+						<li><a href="#">Для бизнеса</a></li>
+						<li><a href="#">Правила и тарифы</a></li>
+						<li><a href="#">Агентам</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Калькулятор ОСАГО</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="menu-mobile__buttons">
+				<a href="#" class="btn-main btn-main_page"><img src="img/ic_alert.svg" alt="alt">Попали в ДТП</a>
+				<a href="#" class="btn-main"><img src="img/ic_login.svg" alt="alt">Войти</a>
+			</div>
+		</div>
+
+		<div class="search-modal">
+			<div class="container">
+				<div class="search-modal__head">
+					<div class="search-modal__title">Поиск по сайту</div>
+					<div class="search-modal__close"></div>
+				</div>
+				<div class="form-search">
+					<input type="search" placeholder="Введите ваш запрос">
+					<div class="form-search__recomendation">
+						<div class="title-small">Популярные запросы</div>
+						<ul>
+							<li><a href="#">Популярные запросы</a></li>
+							<li><a href="#">ОСАГО</a></li>
+							<li><a href="#">Что делать если попал в ДТП</a></li>
+							<li><a href="#">Рассчитать стоимость ОСАГО</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<header class="header">
+			<div class="container">
+				<div class="header__wrap">
+					<a href="#" class="logo">
+						<img src="img/logo.svg" alt="alt">
+					</a>
+					<ul class="menu">
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Документы</a></li>
+						<li><a href="#">Утраченные бланки</a></li>
+						<li><a href="#">Карьера</a></li>
+						<li><a href="#">Вопрос-ответ</a></li>
+						<li><a href="#">Обратная связь</a></li>
+					</ul>
+					<a href="#" class="link-header"><img src="img/company.svg" alt="alt"><span>Центры страхования</span></a>
+					<a href="#" class="link-search"><img src="img/search.svg" alt="alt"><span>Поиск</span></a>
+				</div>
+				<div class="header__bottom">
+					<ul class="menu">
+						<li><a href="#">Для частных лиц</a></li>
+						<li><a href="#">Для бизнеса</a></li>
+						<li><a href="#">Правила и тарифы</a></li>
+						<li><a href="#">Агентам</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Калькулятор ОСАГО</a></li>
+					</ul>
+					<div class="header__buttons">
+						<a href="#" class="btn-main btn-main_page"><img src="img/ic_alert.svg" alt="alt">Попали в ДТП</a>
+						<a href="#" class="btn-main"><img src="img/ic_login.svg" alt="alt">Войти</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="billbord">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8">
+						<div class="billbord__name">оформите <strong>ОСАГО.</strong></div>
+						<h1 class="title-big">Защитите свою финансовую ответственность</h1>
+						<div class="billbord__descr">Защитите себя и других участников дорожного движения от возможных убытков, которые могут возникнуть в результате ДТП.</div>
+						<div class="form-main">
+							<form>
+								<div class="line-form">
+									<div class="item-form">
+										<input type="text" placeholder="А777АА | 777" required="required">
+									</div>
+									<input type="submit" class="btn-main" value="Рассчитать">
+								</div>
+								<div class="descr-form">Нет номера</div>
+							</form>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="image-billbord">
+							<img src="img/billbord1.svg" alt="alt">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="about">
+			<div class="container">
+				<div class="row about__head">
+					<div class="col-lg-6">
+						<h2 class="title-page">Мы работаем, чтобы сберечь ваши деньги</h2>
+					</div>
+					<div class="col-lg-6">
+						<div class="text-about">
+							<p>Мы гарантируем высокое качество обслуживания и индивидуальный подход к каждому клиенту, чтобы обеспечить максимальную защиту и комфорт.</p>
+							<p>Наша миссия - сберечь ваши деньги и обеспечить спокойствие и уверенность в будущем.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row row_about">
+					<div class="col-lg-3 col-6">
+						<a href="#" class="item-about">
+							<span class="title-small">Виды страхования</span>
+							<span class="item-about__image">
+								<img src="img/item_about1.png" alt="alt">
+							</span>
+						</a>
+					</div>
+					<div class="col-lg-3 col-6">
+						<a href="#" class="item-about">
+							<span class="title-small">Правила и тарифы</span>
+							<span class="item-about__image">
+								<img src="img/item_about2.png" alt="alt">
+							</span>
+						</a>
+					</div>
+					<div class="col-lg-3 col-6">
+						<a href="#" class="item-about">
+							<span class="title-small">Центры страхования</span>
+							<span class="item-about__image">
+								<img src="img/item_about3.png" alt="alt">
+							</span>
+						</a>
+					</div>
+					<div class="col-lg-3 col-6">
+						<a href="#" class="item-about">
+							<span class="title-small">Калькулятор</span>
+							<span class="item-about__image">
+								<img src="img/item_about4.png" alt="alt">
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-bonus">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-6">
+						<div class="image-bonus">
+							<img src="img/img_bonus.svg" alt="alt">
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<h2 class="title-section">Что такое «бонус-малус»?</h2>
+						<p>При оформлении полиса ОСАГО для расчета страховой премии используется базовый тариф и ряд коэффициентов, которые учитывают возраст, стаж, технические и другие характеристики.</p>
+						<a href="#" class="btn-main btn-main_default">Узнать подробнее</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="services">
+			<div class="container">
+				<h2 class="title-section">Страхование для бизнеса</h2>
+				<ul class="slider-services">
+					<li>
+						<a href="#" class="item-service">
+							<span class="title-middle">Специальные условия</span>
+							<span class="item-service__text">Наша компания предлагает специальные условия страхования для бизнеса. Мы понимаем, что малый и средний бизнес сталкиваются с множеством рисков, поэтому мы разработали программы страхования, которые помогут защитить ваш бизнес от возможных убытков</span>
+							<span class="item-service__image">
+								<img src="img/service1.png" alt="alt">
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="item-service">
+							<span class="title-middle">Программы страхования</span>
+							<span class="item-service__text">Услуги по страхованию жизни, здоровья, имущества, автомобилей и других видов рисков. Наши программы разработаны с учетом потребностей клиентов и позволяют выбрать оптимальный вариант страхования для каждого случая.</span>
+							<span class="item-service__image">
+								<img src="img/service2.png" alt="alt">
+							</span>
+						</a>
+					</li>
+				</ul>	
+				<h2 class="title-section">Для частных лиц</h2>
+				<ul class="slider-services">
+					<li>
+						<a href="#" class="item-service">
+							<span class="title-middle">Программы страхования</span>
+							<span class="item-service__text">Мы предлагаем широкий выбор программ, которые защищают вас от различных рисков: страхование жизни и здоровья, страхование имущества, страхование ответственности и другие виды страхования.</span>
+							<span class="item-service__image">
+								<img src="img/service3.png" alt="alt">
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="item-service">
+							<span class="title-middle">Центры страхования</span>
+							<span class="item-service__text">Предлагаем консультации по финансовым вопросам и помощь в разработке индивидуальных стратегий инвестирования.</span>
+							<span class="item-service__image">
+								<img src="img/service4.png" alt="alt">
+							</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="section-calculator">
+			<div class="container">
+				<div class="calculator-lead">
+					<div class="row">
+						<div class="col-lg-7">
+							<h2 class="title-middle">Калькулятор ОСАГО</h2>
+							<p>Узнайте стоимость ОСАГО воспользовавшись нашим калькулятором</p>
+							<a href="#" class="btn-main btn-main_default">Рассчитать стоимость</a>
+						</div>
+						<div class="col-lg-5">
+							<div class="calculator-lead__image">
+								<img src="img/calculator_lead.png" alt="alt">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="reviews">
+			<div class="container">
+				<h3 class="title-section">5 000+ довольных клиентов, которые сохранили свои деньги</h3>
+				<div class="reviews__rating">
+					<div class="rating rating_4_5">
+						<div class="rating__item"></div>
+						<div class="rating__item"></div>
+						<div class="rating__item"></div>
+						<div class="rating__item"></div>
+						<div class="rating__item"></div>
+					</div>
+					<p>4.5 звезды средняя оценка наших клиентов</p>
+				</div>
+				<ul class="slider-reviews">
+					<li>
+						<div class="item-review">
+							<div class="item-review__head">
+								<div class="title-min">Виктория</div>
+								<div class="rating rating_5">
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+								</div>
+							</div>
+							<p>Сложно сказать, почему стремящиеся вытеснить традиционное производство, нанотехнологии формируют глобальную экономическую сеть и при этом — указаны как претенденты на роль ключевых факторов.</p>
+							<div class="item-review__date">9 декабря 2023</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-review">
+							<div class="item-review__head">
+								<div class="title-min">Сергей</div>
+								<div class="rating rating_5">
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+								</div>
+							</div>
+							<p>Но социально-экономическое развитие предопределяет высокую востребованность вывода текущих активов! Таким образом, постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие в формировании новых предложений.</p>
+							<div class="item-review__date">23 декабря 2023</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-review">
+							<div class="item-review__head">
+								<div class="title-min">Андрей</div>
+								<div class="rating rating_5">
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+								</div>
+							</div>
+							<p>Принимая во внимание показатели успешности, разбавленное изрядной долей эмпатии, рациональное мышление способствует подготовке и реализации кластеризации усилий. Для современного мира сплочённость команды профессионалов играет важную роль в формировании благоприятных перспектив.</p>
+							<div class="item-review__date">10 января 2023</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-review">
+							<div class="item-review__head">
+								<div class="title-min">Виктория</div>
+								<div class="rating rating_5">
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+								</div>
+							</div>
+							<p>Сложно сказать, почему стремящиеся вытеснить традиционное производство, нанотехнологии формируют глобальную экономическую сеть и при этом — указаны как претенденты на роль ключевых факторов.</p>
+							<div class="item-review__date">9 декабря 2023</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-review">
+							<div class="item-review__head">
+								<div class="title-min">Сергей</div>
+								<div class="rating rating_5">
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+								</div>
+							</div>
+							<p>Но социально-экономическое развитие предопределяет высокую востребованность вывода текущих активов! Таким образом, постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие в формировании новых предложений.</p>
+							<div class="item-review__date">23 декабря 2023</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-review">
+							<div class="item-review__head">
+								<div class="title-min">Андрей</div>
+								<div class="rating rating_5">
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+								</div>
+							</div>
+							<p>Принимая во внимание показатели успешности, разбавленное изрядной долей эмпатии, рациональное мышление способствует подготовке и реализации кластеризации усилий. Для современного мира сплочённость команды профессионалов играет важную роль в формировании благоприятных перспектив.</p>
+							<div class="item-review__date">10 января 2023</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="services services_page">
+			<div class="container">
+				<h2 class="title-section">Законодательство</h2>
+				<div class="row row_services">
+					<div class="col-6">
+						<a href="#" class="item-service item-service_small">
+							<span class="title-small">Гражданский кодекс ДНР</span>
+							<span class="item-service__image">
+								<img src="img/service2_1.png" alt="alt">
+							</span>
+						</a>
+					</div>
+					<div class="col-6">
+						<a href="#" class="item-service item-service_small">
+							<span class="title-small">Правила дорожного движения ДНР</span>
+							<span class="item-service__image">
+								<img src="img/service2_2.png" alt="alt">
+							</span>
+						</a>
+					</div>
+					<div class="col-6">
+						<a href="#" class="item-service item-service_small">
+							<span class="title-small">Постановление ЦРБ <br>о порядке идентификации</span>
+							<span class="item-service__image">
+								<img src="img/service2_3.png" alt="alt">
+							</span>
+						</a>
+					</div>
+					<div class="col-6">
+						<a href="#" class="item-service item-service_small">
+							<span class="title-small">Закон ДНР об ОСАГО</span>
+							<span class="item-service__image">
+								<img src="img/service2_4.png" alt="alt">
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="news">
+			<div class="container">
+				<div class="head-section">
+					<h2 class="title-section">Свежие новости и актуальная информация о страховании</h2>
+					<a href="#" class="btn-main">Все новости</a>
+				</div>
+				<ul class="slider-news">
+					<li>
+						<div class="item-news">
+							<a href="#" class="title-small">Оштрафуют или нет: какое же все-таки в ДНР действует ОСАГО?</a>
+							<div class="item-news__text">
+								<p>Если вы где-то прочитали или услышали информацию, что на территории Донецкой Народной Республики начали действовать «универсальные» полисы ОСАГО РФ либо сотрудники ГАИ не проверяют или уже не имеют право проверять наличие страховки, мы напоминаем, что действительно до 1 января 2024 года у нас не применяется законодательство Российской Федерации об обязательном страховании гражданской ответственности владельцев транспортных средств (ОСАГО).</p>
+								<a href="#" class="link-page">Читать новость</a>
+							</div>
+							<a href="#" class="item-news__image">
+								<img src="img/news1.jpg" alt="alt">
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="item-news">
+							<a href="#" class="title-small">Когда в ДНР начнет действовать российское ОСАГО?</a>
+							<div class="item-news__text">
+								<p>До 1 января 2024 года на территории Донецкой Народной Республики не применяется законодательство Российской Федерации об обязательном страховании гражданской ответственности владельцев транспортных средств.</p>
+								<a href="#" class="link-page">Читать новость</a>
+							</div>
+							<a href="#" class="item-news__image">
+								<img src="img/news2.jpg" alt="alt">
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="item-news">
+							<a href="#" class="title-small">Оштрафуют или нет: какое же все-таки в ДНР действует ОСАГО?</a>
+							<div class="item-news__text">
+								<p>Если вы где-то прочитали или услышали информацию, что на территории Донецкой Народной Республики начали действовать «универсальные» полисы ОСАГО РФ либо сотрудники ГАИ не проверяют или уже не имеют право проверять наличие страховки, мы напоминаем, что действительно до 1 января 2024 года у нас не применяется законодательство Российской Федерации об обязательном страховании гражданской ответственности владельцев транспортных средств (ОСАГО).</p>
+								<a href="#" class="link-page">Читать новость</a>
+							</div>
+							<a href="#" class="item-news__image">
+								<img src="img/news1.jpg" alt="alt">
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="item-news">
+							<a href="#" class="title-small">Когда в ДНР начнет действовать российское ОСАГО?</a>
+							<div class="item-news__text">
+								<p>До 1 января 2024 года на территории Донецкой Народной Республики не применяется законодательство Российской Федерации об обязательном страховании гражданской ответственности владельцев транспортных средств.</p>
+								<a href="#" class="link-page">Читать новость</a>
+							</div>
+							<a href="#" class="item-news__image">
+								<img src="img/news2.jpg" alt="alt">
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="item-news">
+							<a href="#" class="title-small">Оштрафуют или нет: какое же все-таки в ДНР действует ОСАГО?</a>
+							<div class="item-news__text">
+								<p>Если вы где-то прочитали или услышали информацию, что на территории Донецкой Народной Республики начали действовать «универсальные» полисы ОСАГО РФ либо сотрудники ГАИ не проверяют или уже не имеют право проверять наличие страховки, мы напоминаем, что действительно до 1 января 2024 года у нас не применяется законодательство Российской Федерации об обязательном страховании гражданской ответственности владельцев транспортных средств (ОСАГО).</p>
+								<a href="#" class="link-page">Читать новость</a>
+							</div>
+							<a href="#" class="item-news__image">
+								<img src="img/news1.jpg" alt="alt">
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="item-news">
+							<a href="#" class="title-small">Когда в ДНР начнет действовать российское ОСАГО?</a>
+							<div class="item-news__text">
+								<p>До 1 января 2024 года на территории Донецкой Народной Республики не применяется законодательство Российской Федерации об обязательном страховании гражданской ответственности владельцев транспортных средств.</p>
+								<a href="#" class="link-page">Читать новость</a>
+							</div>
+							<a href="#" class="item-news__image">
+								<img src="img/news2.jpg" alt="alt">
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="section-subscribe">
+			<div class="container">
+				<div class="subscribe-main">
+					<div class="row">
+						<div class="col-lg-7">
+							<h2 class="title-middle">Хотите быть в курсе всех новостей?</h2>
+							<p>Подпишитесь на нашу группу Вконтакте и всегда будите в курсе всех событий.</p>
+							<a href="#" class="btn-main btn-main_default"><img src="img/vk.svg" alt="al">Подписаться</a>
+						</div>
+						<div class="col-lg-5">
+							<div class="subscribe-main__image">
+								<img src="img/img_subscribe.png" alt="alt">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="questions">
+			<div class="container">
+				<div class="questions__head">
+					<h2 class="title-section">Часто задаваемые вопросы</h2>
+					<div class="questions__info">
+						<p>Остались вопросы? Получите нужные вам ответы и отправляйтесь в путь с компанией ХАТХОР.</p>
+						<a href="#" class="btn-main">Узнать больше ответов</a>
+					</div>
+				</div>
+				<div class="item-question active">
+					<div class="item-question__head">
+						<div class="title-small">Какие документы нужны для оформления полиса ОСАГО?</div>
+						<div class="item-question__arrow"></div>
+					</div>
+					<div class="item-question__content" style="display: block;">
+						<p><strong>Для оформления полиса вам понадобятся оригиналы:</strong></p>
+						<ul>
+							<li>паспорта;</li>
+							<li>ИНН;</li>
+							<li>пенсионного удостоверения (при наличии);</li>
+							<li>водительского удостоверения;</li>
+							<li>документа о регистрации транспортного средства;</li>
+							<li>копии водительских прав лиц, которых планируется указать в страховом полисе.</li>
+						</ul>
+						<p>Если страхователь не является владельцем ТС нужно предоставить копии документов, удостоверяющих личность собственника ТС либо доверенность, в которой содержатся его персональные данные.</p>
+					</div>
+				</div>
+				<div class="item-question">
+					<div class="item-question__head">
+						<div class="title-small">Кто имеет право на «льготу» при оформлении полиса ОСАГО?</div>
+						<div class="item-question__arrow"></div>
+					</div>
+					<div class="item-question__content">
+						<p><strong>Для оформления полиса вам понадобятся оригиналы:</strong></p>
+						<ul>
+							<li>паспорта;</li>
+							<li>ИНН;</li>
+							<li>пенсионного удостоверения (при наличии);</li>
+							<li>водительского удостоверения;</li>
+							<li>документа о регистрации транспортного средства;</li>
+							<li>копии водительских прав лиц, которых планируется указать в страховом полисе.</li>
+						</ul>
+						<p>Если страхователь не является владельцем ТС нужно предоставить копии документов, удостоверяющих личность собственника ТС либо доверенность, в которой содержатся его персональные данные.</p>
+					</div>
+				</div>
+				<div class="item-question">
+					<div class="item-question__head">
+						<div class="title-small">Что такое КБМ или «бонус-малус»?</div>
+						<div class="item-question__arrow"></div>
+					</div>
+					<div class="item-question__content">
+						<p><strong>Для оформления полиса вам понадобятся оригиналы:</strong></p>
+						<ul>
+							<li>паспорта;</li>
+							<li>ИНН;</li>
+							<li>пенсионного удостоверения (при наличии);</li>
+							<li>водительского удостоверения;</li>
+							<li>документа о регистрации транспортного средства;</li>
+							<li>копии водительских прав лиц, которых планируется указать в страховом полисе.</li>
+						</ul>
+						<p>Если страхователь не является владельцем ТС нужно предоставить копии документов, удостоверяющих личность собственника ТС либо доверенность, в которой содержатся его персональные данные.</p>
+					</div>
+				</div>
+				<div class="item-question">
+					<div class="item-question__head">
+						<div class="title-small">Действует ли полис ОСАГО СК «ХАТХОР» на территории Российской Федерации?</div>
+						<div class="item-question__arrow"></div>
+					</div>
+					<div class="item-question__content">
+						<p><strong>Для оформления полиса вам понадобятся оригиналы:</strong></p>
+						<ul>
+							<li>паспорта;</li>
+							<li>ИНН;</li>
+							<li>пенсионного удостоверения (при наличии);</li>
+							<li>водительского удостоверения;</li>
+							<li>документа о регистрации транспортного средства;</li>
+							<li>копии водительских прав лиц, которых планируется указать в страховом полисе.</li>
+						</ul>
+						<p>Если страхователь не является владельцем ТС нужно предоставить копии документов, удостоверяющих личность собственника ТС либо доверенность, в которой содержатся его персональные данные.</p>
+					</div>
+				</div>
+				<div class="item-question">
+					<div class="item-question__head">
+						<div class="title-small">Что такое «право регрессного требования»?</div>
+						<div class="item-question__arrow"></div>
+					</div>
+					<div class="item-question__content">
+						<p><strong>Для оформления полиса вам понадобятся оригиналы:</strong></p>
+						<ul>
+							<li>паспорта;</li>
+							<li>ИНН;</li>
+							<li>пенсионного удостоверения (при наличии);</li>
+							<li>водительского удостоверения;</li>
+							<li>документа о регистрации транспортного средства;</li>
+							<li>копии водительских прав лиц, которых планируется указать в страховом полисе.</li>
+						</ul>
+						<p>Если страхователь не является владельцем ТС нужно предоставить копии документов, удостоверяющих личность собственника ТС либо доверенность, в которой содержатся его персональные данные.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="contacts">
+			<div class="container">
+				<h2 class="title-section">Контакты</h2>
+				<div class="row">
+					<div class="col-lg-5">
+						<div class="contacts-block">
+							<div class="title-middle">Связаться с нами</div>
+							<p>Наша звездная команда поддержки клиентов готова помочь вам в каждую минуту.</p>
+							<ul class="list-contacts">
+								<li>
+									<a href="#" class="item-contact">
+										<span class="item-contact__icon">
+											<img src="img/ic_contact1.svg" alt="alt">
+										</span>
+										<span>551</span>
+									</a>
+								</li>
+								<li>
+									<a href="tel:+79493105000" class="item-contact">
+										<span class="item-contact__icon">
+											<img src="img/ic_contact2.svg" alt="alt">
+										</span>
+										<span>+7 (949) 310 50 00</span>
+									</a>
+								</li>
+								<li>
+									<a href="mailto:office@khathor.ru" class="item-contact">
+										<span class="item-contact__icon">
+											<img src="img/ic_contact3.svg" alt="alt">
+										</span>
+										<span>office@khathor.ru</span>
+									</a>
+								</li>
+								<li>
+									<div class="item-contact">
+										<span class="item-contact__icon">
+											<img src="img/ic_contact1.svg" alt="alt">
+										</span>
+										<span>Пн-Пт: 9:00-17:00, Сб-Вс: Выходные дни </span>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-7">
+						<div id="map"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="consultation">
+			<div class="container">
+				<div class="consultation-block">
+					<div class="row">
+						<div class="col-lg-5">
+							<div class="consultation-block__image">
+								<img src="img/consultation.png" alt="alt">
+							</div>
+						</div>
+						<div class="col-lg-7">
+							<div class="consultation-block__right">
+								<div class="title-middle">Остались вопросы?</div>
+								<p>Оставьте свой номер телефона и наш менеджер свяжется с Вами в ближайшее время.</p>
+								<div class="form-main">
+									<form>
+										<div class="line-form">
+											<div class="item-form">
+												<input type="text" placeholder="+7 (949) 777 77 77" class="input-phone" required="required">
+											</div>
+											<input type="submit" class="btn-main" value="Отправить">
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" required="required" checked="checked" />
+												<span>Я даю согласие на обработку персональных данных</span>
+											</label>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-2">
+						<div class="footer__left">
+							<a href="#" class="logo">
+								<img src="img/logo2.svg" alt="alt">
+							</a>
+							<ul class="list-socials">
+								<li><a href="#" target="_blank"><img src="img/soc1.svg" alt="alt"></a></li>
+								<li><a href="#" target="_blank"><img src="img/soc2.svg" alt="alt"></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="footer__contacts">
+							<div class="row">
+								<div class="col-6">
+									<div class="footer-contact">
+										<a href="551" class="title-small">551</a>
+										<div class="footer-contact__descr">Короткий номер</div>
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="footer-contact">
+										<div class="title-small">Пн-Пт: 9:00-17:00</div>
+										<div class="footer-contact__descr">График работы</div>
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="footer-contact">
+										<a href="tel:+79493105000" class="title-small">+7 (949) 310 50 00</a>
+										<div class="footer-contact__descr">Номер телефона</div>
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="footer-contact">
+										<a href="mailto:office@khathor.ru" class="title-small">office@khathor.ru</a>
+										<div class="footer-contact__descr">Электронная почта</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="row">
+							<div class="col-6">
+								<div class="footer__title">О компании</div>
+								<ul class="footer__nav">
+									<li><a href="#">О нас</a></li>
+									<li><a href="#">Документы</a></li>
+									<li><a href="#">Центры страхования</a></li>
+									<li><a href="#">Агентам</a></li>
+									<li><a href="#">Новости</a></li>
+									<li><a href="#">Утраченные бланки</a></li>
+									<li><a href="#">Вакансии</a></li>
+								</ul>
+							</div>
+							<div class="col-6">
+								<div class="footer__title">Программы</div>
+								<ul class="footer__nav">
+									<li><a href="#">Для частных лиц</a></li>
+									<li><a href="#">Для бизнеса</a></li>
+									<li><a href="#">Правила и тарифы</a></li>
+									<li><a href="#">Калькулятор ОСАГО</a></li>
+									<li><a href="#">Вопрос-ответ</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__text">© 2021–2023 Общество с ограниченной ответственностью «Страховая компания «ХАТХОР» Россия, ДНР, Донецк, 121552, пр. Ильича , 3 Лицензия банка России от 01.01.2024: ОС № 0621–05, ПС № 0621. Предложения о страховании по добровольным видам имущественного страхования не являются публичной офертой, решение о заключении договора страхования на конкретных условиях принимается только по соглашению сторон. </div>
+				<div class="footer__bottom">Быстрый доступ к <a href="#">правилам и тарифам</a> и <a href="#">политике по обработке персональных данных.</a></div>
+			</div>
+		</footer>
+		
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	<script src="libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+	<script src="libs/fancybox-master/dist/jquery.fancybox.min.js"></script>
+	<script src="libs/slick-1.5.9/slick/slick.min.js"></script>
+	<script src="libs/scroll2id/PageScroll2id.min.js"></script>
+	<script src="libs/mask/jquery.maskedinput.js"></script>
+	<script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
+	<script src="js/common.js?ver=1.1"></script>
+	<!--
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+	<script>
+		$(document).ready(function () {
+			ymaps.ready(init);
+ 
+			function init() {
+				var myMap = new ymaps.Map('map', {
+					center: [48.003454, 37.802688],
+					zoom: 13
+				}, {
+					searchControlProvider: 'yandex#search'
+				});
+
+				myPlacemark1 = new ymaps.Placemark([48.001434, 37.760249], {
+
+				}, {
+					iconLayout: 'default#imageWithContent',
+					iconImageHref: 'img/pin.svg',
+					iconImageSize: [64, 75],
+					iconImageOffset: [-32, -75],
+					balloonOffset: [0, 75],
+					hideIconOnBalloonOpen: false,
+				});
+				
+				myPlacemark2 = new ymaps.Placemark([48.011917, 37.775441], {
+
+				}, {
+					iconLayout: 'default#imageWithContent',
+					iconImageHref: 'img/pin.svg',
+					iconImageSize: [64, 75],
+					iconImageOffset: [-32, -75],
+					balloonOffset: [0, 75],
+					hideIconOnBalloonOpen: false,
+				});	
+
+				myPlacemark3 = new ymaps.Placemark([47.995616, 37.804710], {
+
+				}, {
+					iconLayout: 'default#imageWithContent',
+					iconImageHref: 'img/pin.svg',
+					iconImageSize: [64, 75],
+					iconImageOffset: [-32, -75],
+					balloonOffset: [0, 75],
+					hideIconOnBalloonOpen: false,
+				});	
+
+				myPlacemark4 = new ymaps.Placemark([48.005947, 37.831271], {
+
+				}, {
+					iconLayout: 'default#imageWithContent',
+					iconImageHref: 'img/pin.svg',
+					iconImageSize: [64, 75],
+					iconImageOffset: [-32, -75],
+					balloonOffset: [0, 75],
+					hideIconOnBalloonOpen: false,
+				});	
+
+				myMap.controls.remove('searchControl');
+				myMap.behaviors.disable('scrollZoom');
+				myMap.geoObjects.add(myPlacemark1);
+				myMap.geoObjects.add(myPlacemark2);
+				myMap.geoObjects.add(myPlacemark3);
+				myMap.geoObjects.add(myPlacemark4);
+			}
+		});
+	</script>
+	-->
+	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>

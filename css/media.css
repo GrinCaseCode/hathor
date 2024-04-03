@@ -179,6 +179,59 @@
         font-size: 35px;
         line-height: 38px;
     }
+    .item-about.item-about_page {
+        min-height: 160px;
+        margin-bottom: 25px;
+        padding-right: 152px;
+        font-size: 14px;
+    }
+    .page-about,
+    .lead-company {
+        padding: 60px 0;
+    }
+    .lead-company__descr {
+        max-width: 570px;
+    }
+    .row_lead > div {
+        margin-top: 20px;
+    }
+    .item-lead__image {
+        width: 155px;
+        height: 155px;
+        margin-right: 15px;
+    }
+    .item-lead__descr {
+        font-size: 14px;
+        margin-bottom: 7px;
+        line-height: 18px;
+    }
+    .billbord-page_vacancies .descr-billbord,
+    .billbord-page_career .descr-billbord {
+        max-width: 390px;
+    }
+    .billbord-page_career .title-big {
+        max-width: 435px;
+    }
+    .item-service.item-service_career .title-middle {
+        font-size: 36px;
+    }
+    .item-service_career .title-small span {
+        font-size: 16px;
+    }
+    .row_main > div,
+    .row_services > div {
+        margin-bottom: 20px;
+    }
+    .row.row_main,
+    .row.row_services {
+        margin-bottom: -20px;
+    }
+    .wrapper_page {
+        padding-top: 140px;
+    }
+    .wrapper_page .breadcrumbs {
+        padding: 40px 0;
+    }
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -299,6 +352,93 @@
     .slider-services .slick-list {
         margin: -20px -10px;
         margin-bottom: -40px;
+    }
+    .page-about .title-section {
+        margin-bottom: 25px;
+    }
+    .item-about.item-about_page {
+        min-height: 150px;
+        margin-bottom: 20px;
+        padding-right: 125px;
+        font-size: 13px;
+    }
+    .lead-company__descr {
+        max-width: 530px;
+        margin-bottom: 10px;
+    }
+    .breadcrumbs {
+        margin-bottom: 35px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .billbord-page {
+        padding-top: 175px;
+        min-height: 475px;
+    }
+    .page-documents {
+        padding: 60px 0;
+    }
+    .billbord-page_career .title-big {
+        max-width: 352px;
+    }
+    .billbord-page_vacancies .descr-billbord,
+    .billbord-page_career .descr-billbord {
+        max-width: 338px;
+    }
+    .item-service.item-service_career .title-middle {
+        font-size: 28px;
+    }
+    .item-service.item-service_career {
+        min-height: 230px;
+    }
+    .billbord-page_single {
+        min-height: 400px;
+    }
+    .title-main {
+        font-size: 34px;
+    }
+    .location-text {
+        margin-bottom: 32px;
+    }
+    .location-text span {
+        font-size: 14px;
+    }
+    .content-single {
+        padding: 30px;
+    }
+    .billbord-page_questions {
+        min-height: 395px;
+    }
+    .billbord-page_contacts {
+        min-height: 441px;
+    }
+    .billbord-page_news .billbord-page__image {
+        margin-bottom: -39px;
+        margin-left: 0;
+    }
+    .billbord-page_news {
+        min-height: 395px;
+    }
+    .content-page {
+        padding: 30px;
+    }
+    .content-page h1 {
+        font-size: 34px;
+    }
+    .content-page h2 {
+        font-size: 28px;
+    }
+    .recommendation {
+        padding: 56px 0;
+    }
+    .page-article {
+        padding-bottom: 40px;
+    }
+    .wrapper_page {
+        padding-top: 134px;
+    }
+    .wrapper_page .breadcrumbs {
+        padding: 30px 0;
     }
 }
 
@@ -518,6 +658,26 @@
     }
     .item-service_small::after {
         display: none;
+    }
+    .item-service_small::before {
+        position: absolute;
+        display: block;
+        content: " ";
+        top: -150px;
+        right: -150px;
+        width: 1000px;
+        height: 1000px;
+        bottom: auto;
+        left: auto;
+        transform: scale(0);
+        transform-origin: 50% 50%;
+        background: #1D6CB5;
+        transition: all 0.7s;
+        border-radius: 50%;
+        z-index: -1;
+    }
+    .item-service_small:hover::before {
+        transform: scale(1);
     }
     .row_services > div {
         margin-bottom: 16px;
@@ -832,6 +992,265 @@
     .form-search__recomendation li {
         margin-bottom: 16px;
     }
+    .billbord-page {
+        padding-top: 108px;
+    }
+    .breadcrumbs {
+        margin-bottom: 32px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .billbord-page__image {
+        margin-top: 32px;
+    }
+    .billbord-page__image img {
+        margin: 0 auto;
+        width: 285px;
+    }
+    .page-about, .lead-company {
+        padding: 56px 0;
+    }
+    .page-about .title-section {
+        margin-bottom: 32px;
+    }
+    .item-about.item-about_page {
+        font-size: 13px;
+        line-height: 150%;
+        min-height: 147px;
+        margin-bottom: 0;
+        margin-top: 24px;
+    }
+    .item-about_page .item-about__image img {
+        transform: scale(0.6);
+    }
+    .item-about.item-about_page .title-small {
+        font-size: 16px;
+    }
+    .item-lead {
+        display: block;
+    }
+    .item-lead__image {
+        width: 343px;
+        height: 343px;
+        max-width: 100%;
+        margin: 0;
+        margin-bottom: 16px;
+    }
+    .item-lead__descr {
+        font-size: 13px;
+        margin-bottom: 8px;
+        line-height: 16px;
+    }
+    .row_lead > div {
+        margin-top: 0;
+        margin-bottom: 32px;
+    }
+    .row_lead > div:last-child {
+        margin-bottom: 0;
+    }
+    .billbord-page_documents .billbord-page__image img {
+        max-width: 167px;
+        margin-left: auto;
+        margin-right: -15px;
+    }
+    .billbord-page_documents .billbord-page__image {
+        margin-top: -90px;
+        margin-bottom: -33px;
+    }
+    .billbord-page_documents {
+        min-height: 253px;
+        background-position: 29% 50%;
+    }
+    .billbord-page_vacancies {
+        background-position: 40% 50%;
+    }
+    .item-document__link,
+    .item-document .icon-page {
+        display: none;
+    }
+    .item-document {
+        padding: 16px;
+    }
+    .item-document::after {
+        position: relative;
+        content: " ";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: none;
+        background-color: #1D6CB5;
+        background-image: url(../img/download2.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-left: 15px;
+    }
+    .page-inner {
+        padding: 56px 0;
+    }
+    .item-document .title-small {
+        font-size: 16px;
+        display: block;
+        -webkit-line-clamp: initial;
+        -webkit-box-orient: initial;
+        overflow: initial;
+    }
+    .billbord-page_career .title-big {
+        max-width: 279px;
+    }
+    .billbord-page_career .billbord-page__image {
+        margin-top: 32px;
+    }
+    .billbord-page_career .billbord-page__image img {
+        max-width: 169px;
+    }
+    .item-service.item-service_career {
+        min-height: 195px;
+    }
+    .item-service.item-service_career .title-middle {
+        font-size: 24px;
+    }
+    .billbord-page_vacancies .billbord-page__image img {
+        max-width: 265px;
+    }
+    .billbord-page_vacancies .billbord-page__image {
+        margin-top: 20px;
+        margin-bottom: -38px;
+    }
+    .billbord-page_vacancies + .page-inner .item-service.item-service_career .item-service__image {
+        bottom: -15px;
+    }
+    .billbord-page_vacancies + .page-inner .item-service.item-service_career {
+        min-height: 219px;
+    }
+    .billbord-page_single .billbord-page__image img {
+        max-width: 120px;
+        margin-left: auto;
+        margin-right: -20px;
+    }
+    .billbord-page_single .billbord-page__image {
+        margin: 0;
+        margin-top: -60px;
+        margin-bottom: -25px;
+    }
+    .billbord-page_contacts,
+    .billbord-page_single {
+        min-height: 253px;
+        background-position: 22% 50%;
+    }
+    .content-single {
+        padding: 16px;
+    }
+    .title-main {
+        font-size: 24px;
+    }
+    .location-text span {
+        font-size: 16px;
+    }
+    .location-text {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+    .content-single__bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+    .content-single__bottom .btn-main {
+        margin-right: 0;
+    }
+    .content-single__bottom .share-wrap {
+        margin-top: 24px;
+    }
+    .billbord-page_questions {
+        min-height: 600px;
+        background-image: url(../img/bg_billbord_questions_mobile.jpg);
+    }
+    .billbord-page_contacts .billbord-page__image img {
+        max-width: 131px;
+        margin-right: -15px;
+    }
+    .billbord-page_contacts .billbord-page__image {
+        margin-top: -110px;
+        margin-bottom: -44px;
+    }
+    .billbord-page_news .billbord-page__image img {
+        width: 135px;
+        margin-right: 0;
+    }
+    .billbord-page_news {
+        min-height: 376px;
+        background-position: 40% 50%;
+    }
+    .billbord-page_news .billbord-page__image {
+        margin-bottom: -31px;
+        margin-top: -40px;
+    }
+    .tabs-wrap {
+        margin-bottom: 32px;
+    }
+    .page-inner .item-news__image {
+        display: block;
+    }
+    .item-news__image {
+        height: 250px;
+        margin-top: 16px;
+    }
+    .page-numbers {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+    .pager {
+        margin-top: 32px;
+    }
+    .billbord-page_news .title-big {
+        max-width: 336px;
+    }
+    .wrapper_page .breadcrumbs {
+        padding-top: 0;
+        padding-bottom: 32px;
+    }
+    .wrapper_page {
+        padding-top: 109px;
+    }
+    .wrapper_page .breadcrumbs li {
+        margin-bottom: 8px;
+    }
+    .wrapper_page .breadcrumbs {
+        margin-bottom: -8px;
+    }
+    .breadcrumbs li {
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+    }
+    .content-page {
+        padding: 16px;
+    }
+    .content-page h1 {
+        font-size: 24px;
+    }
+    .content-page h2 {
+        font-size: 24px;
+    }
+    .content-page .share-wrap {
+        justify-content: flex-start;
+    }
+    .recommendation .item-news__image {
+        display: block;
+    }
+    .recommendation .title-section {
+        margin-bottom: 32px;
+    }
+    .billbord-page_contacts, .billbord-page_single {
+        background-position: 16% 50%;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -841,7 +1260,9 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+    .item-news__image {
+        height: 150px;
+    }
 }
 
 /* Custom, iPhone Retina */

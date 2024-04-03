@@ -1857,3 +1857,12 @@ form {
 .content-page .share-wrap {
 	justify-content: flex-end;
 }
+.item-about_page::before {
+	display: none;
+}
+.item-about_page:hover .item-about__image {
+	transform: none;
+}
+.item-about_page:hover .title-small {
+    color: #1C1E1E;
+}

@@ -18,8 +18,8 @@
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.1" />
-	<link rel="stylesheet" href="css/media.css?ver=1.1" />
+	<link rel="stylesheet" href="css/main.css?ver=1.2" />
+	<link rel="stylesheet" href="css/media.css?ver=1.2" />
 </head>
 <body>
 
@@ -846,7 +846,7 @@
 	<script src="libs/scroll2id/PageScroll2id.min.js"></script>
 	<script src="libs/mask/jquery.maskedinput.js"></script>
 	<script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
-	<script src="js/common.js?ver=1.1"></script>
+	<script src="js/common.js?ver=1.2"></script>
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 	<script>
 		$(document).ready(function () {
@@ -861,47 +861,87 @@
 				});
 
 				myPlacemark1 = new ymaps.Placemark([48.001434, 37.760249], {
-
+					balloonContent: `
+					<div class="ballon">
+						<div class="ballon__icon">
+							<img src="img/pn.svg" alt="alt">
+						</div>
+						<div class="ballon__content">
+							<span>Отделение №12</span>
+							<strong>ул.Артёма 12А</strong>
+						</div>
+					</div>
+					`
 				}, {
 					iconLayout: 'default#imageWithContent',
 					iconImageHref: 'img/pin.svg',
 					iconImageSize: [64, 75],
 					iconImageOffset: [-32, -75],
-					balloonOffset: [0, 75],
-					hideIconOnBalloonOpen: false,
+					balloonOffset: [25, -10],
+					hideIconOnBalloonOpen: true,
 				});
 				
 				myPlacemark2 = new ymaps.Placemark([48.011917, 37.775441], {
-
+					balloonContent: `
+					<div class="ballon">
+						<div class="ballon__icon">
+							<img src="img/pn.svg" alt="alt">
+						</div>
+						<div class="ballon__content">
+							<span>Отделение №12</span>
+							<strong>ул.Артёма 12А</strong>
+						</div>
+					</div>
+					`
 				}, {
 					iconLayout: 'default#imageWithContent',
 					iconImageHref: 'img/pin.svg',
 					iconImageSize: [64, 75],
 					iconImageOffset: [-32, -75],
-					balloonOffset: [0, 75],
-					hideIconOnBalloonOpen: false,
+					balloonOffset: [25, -10],
+					hideIconOnBalloonOpen: true,
 				});	
 
 				myPlacemark3 = new ymaps.Placemark([47.995616, 37.804710], {
-
+					balloonContent: `
+					<div class="ballon">
+						<div class="ballon__icon">
+							<img src="img/pn.svg" alt="alt">
+						</div>
+						<div class="ballon__content">
+							<span>Отделение №12</span>
+							<strong>ул.Артёма 12А</strong>
+						</div>
+					</div>
+					`
 				}, {
 					iconLayout: 'default#imageWithContent',
 					iconImageHref: 'img/pin.svg',
 					iconImageSize: [64, 75],
 					iconImageOffset: [-32, -75],
-					balloonOffset: [0, 75],
-					hideIconOnBalloonOpen: false,
+					balloonOffset: [25, -10],
+					hideIconOnBalloonOpen: true,
 				});	
 
 				myPlacemark4 = new ymaps.Placemark([48.005947, 37.831271], {
-
+					balloonContent: `
+					<div class="ballon">
+						<div class="ballon__icon">
+							<img src="img/pn.svg" alt="alt">
+						</div>
+						<div class="ballon__content">
+							<span>Отделение №12</span>
+							<strong>ул.Артёма 12А</strong>
+						</div>
+					</div>
+					`
 				}, {
 					iconLayout: 'default#imageWithContent',
 					iconImageHref: 'img/pin.svg',
 					iconImageSize: [64, 75],
 					iconImageOffset: [-32, -75],
-					balloonOffset: [0, 75],
-					hideIconOnBalloonOpen: false,
+					balloonOffset: [25, -10],
+					hideIconOnBalloonOpen: true,
 				});	
 
 				myMap.controls.remove('searchControl');

@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Заголовок</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
+	<link rel="stylesheet" href="libs/fontawesome-free-5.12.0-web/css/all.min.css" />
+	<link rel="stylesheet" href="libs/fancybox-master/dist/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/main.css?ver=1.2" />
+	<link rel="stylesheet" href="css/media.css?ver=1.2" />
+</head>
+<body>
+
+	<div class="wrapper">
+
+		<div class="buttons-fixed">
+			<a href="#" class="btn-fixed">
+				<span class="btn-fixed__icon">
+					<img src="img/btn_fixed1.svg" alt="alt">
+				</span>
+				<div class="btn-fixed__title">Попали в ДТП</div>
+			</a>
+			<a href="#" class="btn-fixed btn-fixed_search">
+				<span class="btn-fixed__icon">
+					<img src="img/btn_fixed2.svg" alt="alt">
+				</span>
+				<div class="btn-fixed__title">Поиск</div>
+			</a>
+			<a href="#" class="btn-fixed btn-fixed_menu">
+				<span class="sandwich"></span>
+				<div class="btn-fixed__title">Меню</div>
+			</a>
+			<a href="#" class="btn-fixed">
+				<span class="btn-fixed__icon">
+					<img src="img/btn_fixed3.svg" alt="alt">
+				</span>
+				<div class="btn-fixed__title">Центры</div>
+			</a>
+			<a href="#" class="btn-fixed">
+				<span class="btn-fixed__icon">
+					<img src="img/btn_fixed4.svg" alt="alt">
+				</span>
+				<div class="btn-fixed__title">Калькулятор</div>
+			</a>
+		</div>
+
+		<div class="menu-mobile">
+			<div class="menu-mobile__close"></div>
+			<div class="menu-mobile__title">Меню</div>
+			<ul class="tabs-menu">
+				<li class="active"><a href="#tab_menu1">О компании</a></li>
+				<li><a href="#tab_menu2">Программы</a></li>
+			</ul>
+			<div class="tab-container-menu">
+				<div class="tab-pane-menu" id="tab_menu1">
+					<ul class="menu-mobile__list">
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Документы</a></li>
+						<li><a href="#">Центры страхования</a></li>
+						<li><a href="#">Агентам</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Утраченные бланки</a></li>
+						<li><a href="#">Вакансии</a></li>
+						<li><a href="#">Обратная связь</a></li>
+					</ul>
+				</div>
+				<div class="tab-pane-menu" id="tab_menu2">
+					<ul class="menu-mobile__list">
+						<li><a href="#">Для частных лиц</a></li>
+						<li><a href="#">Для бизнеса</a></li>
+						<li><a href="#">Правила и тарифы</a></li>
+						<li><a href="#">Агентам</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Калькулятор ОСАГО</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="menu-mobile__buttons">
+				<a href="#" class="btn-main btn-main_page"><img src="img/ic_alert.svg" alt="alt">Попали в ДТП</a>
+				<a href="#" class="btn-main"><img src="img/ic_login.svg" alt="alt">Войти</a>
+			</div>
+		</div>
+
+		<div class="search-modal">
+			<div class="container">
+				<div class="search-modal__head">
+					<div class="search-modal__title">Поиск по сайту</div>
+					<div class="search-modal__close"></div>
+				</div>
+				<div class="form-search">
+					<input type="search" placeholder="Введите ваш запрос">
+					<div class="form-search__recomendation">
+						<div class="title-small">Популярные запросы</div>
+						<ul>
+							<li><a href="#">Популярные запросы</a></li>
+							<li><a href="#">ОСАГО</a></li>
+							<li><a href="#">Что делать если попал в ДТП</a></li>
+							<li><a href="#">Рассчитать стоимость ОСАГО</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<header class="header">
+			<div class="container">
+				<div class="header__wrap">
+					<a href="#" class="logo">
+						<img src="img/logo.svg" alt="alt">
+					</a>
+					<ul class="menu">
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Документы</a></li>
+						<li><a href="#">Утраченные бланки</a></li>
+						<li><a href="#">Карьера</a></li>
+						<li><a href="#">Вопрос-ответ</a></li>
+						<li><a href="#">Обратная связь</a></li>
+					</ul>
+					<a href="#" class="link-header"><img src="img/company.svg" alt="alt"><span>Центры страхования</span></a>
+					<a href="#" class="link-search"><img src="img/search.svg" alt="alt"><span>Поиск</span></a>
+				</div>
+				<div class="header__bottom">
+					<ul class="menu">
+						<li><a href="#">Для частных лиц</a></li>
+						<li><a href="#">Для бизнеса</a></li>
+						<li><a href="#">Правила и тарифы</a></li>
+						<li><a href="#">Агентам</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Калькулятор ОСАГО</a></li>
+					</ul>
+					<div class="header__buttons">
+						<a href="#" class="btn-main btn-main_page"><img src="img/ic_alert.svg" alt="alt">Попали в ДТП</a>
+						<a href="#" class="btn-main"><img src="img/ic_login.svg" alt="alt">Войти</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="billbord-page">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7">
+						<ul class="breadcrumbs">
+							<li><a href="#">Главная</a></li>
+							<li>О компании</li>
+						</ul>
+						<h1 class="title-big">О компании «ХАТХОР»</h1>
+						<div class="descr-billbord">Выбирая нашу страховую компанию, вы выбираете надежность, опыт и профессионализм, которые станут гарантией вашего благополучия и успеха.</div>
+					</div>
+					<div class="col-lg-5">
+						<div class="billbord-page__image">
+							<img src="img/billbord_about.png" alt="alt">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="page-about">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7">
+						<h2 class="title-section">Общество с ограниченной ответственностью</h2>
+						<div class="title-middle">Страховая компания «ХАТХОР»</div>
+						<p>Была зарегистрирована Центральным Республиканским Банком 28 февраля 2020 года в качестве некредитной финансовой организации.</p>
+						<p>21 апреля 2020 года компания получила лицензию на осуществление деятельности по обязательному страхованию гражданской ответственности владельцев транспортных средств.</p>
+						<p>Гарантию стабильного выполнения компанией взятых на себя финансовых обязательств выполняет уставный капитал в размере 120 миллионов рублей и резервный фонд, размещенный в ЦРБ, денежные средства в который отчисляются с каждого проданного договора страхования.</p>
+						<p>Для удобства клиентов и оперативного принятия решений о выплате возмещений в компании работает штат специалистов по урегулированию убытков.</p>
+					</div>
+					<div class="col-lg-5">
+						<div class="item-about item-about_page">
+							<div class="title-small">12 Центров страхования</div>
+							<p>в Донецке, Макеевке, Горловке, Енакиево, Шахтерске, Новоазовске, Харцызске, Амвросиевке и Старобешево</p>
+							<div class="item-about__image">
+								<img src="img/page_about1.png" alt="alt">
+							</div>
+						</div>
+						<div class="item-about item-about_page">
+							<div class="title-small">Более 70</div>
+							<p>агентских точек продаж во всех регионах Республики</p>
+							<div class="item-about__image">
+								<img src="img/page_about2.png" alt="alt">
+							</div>
+						</div>
+						<div class="item-about item-about_page">
+							<div class="title-small">141 отделение</div>
+							<p>ГП «Почта Донбасса» с нами сотрудничают</p>
+							<div class="item-about__image">
+								<img src="img/page_about3.png" alt="alt">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="lead-company">
+			<div class="container">
+				<h2 class="title-section">Руководство компании</h2>
+				<div class="lead-company__descr">Эффективное управление рисками и оптимальные стратегии страхования: советы от руководства страховой компании</div>
+				<div class="row row_lead">
+					<div class="col-lg-6">
+						<div class="item-lead">
+							<div class="item-lead__image">
+								<img src="img/lead1.jpg" alt="alt">
+							</div>
+							<div class="item-lead__content">
+								<div class="item-lead__descr">Работает с 2018 года</div>
+								<div class="title-small">Михайленко Оксана Александровна</div>
+								<p>Директор</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="item-lead">
+							<div class="item-lead__image">
+								<img src="img/lead2.jpg" alt="alt">
+							</div>
+							<div class="item-lead__content">
+								<div class="item-lead__descr">Работает с 2018 года</div>
+								<div class="title-small">Ткачук Сергей Александрович</div>
+								<p>Зам. директора по финансово-экономической безопасности</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="reviews">
+			<div class="container">
+				<h3 class="title-section">5 000+ довольных клиентов, которые сохранили свои деньги</h3>
+				<div class="reviews__rating">
+					<div class="rating rating_4_5">
+						<div class="rating__item"></div>
+						<div class="rating__item"></div>
+						<div class="rating__item"></div>
+						<div class="rating__item"></div>
+						<div class="rating__item"></div>
+					</div>
+					<p>4.5 звезды средняя оценка наших клиентов</p>
+				</div>
+				<ul class="slider-reviews">
+					<li>
+						<div class="item-review">
+							<div class="item-review__head">
+								<div class="title-min">Виктория</div>
+								<div class="rating rating_5">
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+								</div>
+							</div>
+							<p>Сложно сказать, почему стремящиеся вытеснить традиционное производство, нанотехнологии формируют глобальную экономическую сеть и при этом — указаны как претенденты на роль ключевых факторов.</p>
+							<div class="item-review__date">9 декабря 2023</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-review">
+							<div class="item-review__head">
+								<div class="title-min">Сергей</div>
+								<div class="rating rating_5">
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+								</div>
+							</div>
+							<p>Но социально-экономическое развитие предопределяет высокую востребованность вывода текущих активов! Таким образом, постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие в формировании новых предложений.</p>
+							<div class="item-review__date">23 декабря 2023</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-review">
+							<div class="item-review__head">
+								<div class="title-min">Андрей</div>
+								<div class="rating rating_5">
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+								</div>
+							</div>
+							<p>Принимая во внимание показатели успешности, разбавленное изрядной долей эмпатии, рациональное мышление способствует подготовке и реализации кластеризации усилий. Для современного мира сплочённость команды профессионалов играет важную роль в формировании благоприятных перспектив.</p>
+							<div class="item-review__date">10 января 2023</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-review">
+							<div class="item-review__head">
+								<div class="title-min">Виктория</div>
+								<div class="rating rating_5">
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+								</div>
+							</div>
+							<p>Сложно сказать, почему стремящиеся вытеснить традиционное производство, нанотехнологии формируют глобальную экономическую сеть и при этом — указаны как претенденты на роль ключевых факторов.</p>
+							<div class="item-review__date">9 декабря 2023</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-review">
+							<div class="item-review__head">
+								<div class="title-min">Сергей</div>
+								<div class="rating rating_5">
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+								</div>
+							</div>
+							<p>Но социально-экономическое развитие предопределяет высокую востребованность вывода текущих активов! Таким образом, постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие в формировании новых предложений.</p>
+							<div class="item-review__date">23 декабря 2023</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-review">
+							<div class="item-review__head">
+								<div class="title-min">Андрей</div>
+								<div class="rating rating_5">
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+									<div class="rating__item"></div>
+								</div>
+							</div>
+							<p>Принимая во внимание показатели успешности, разбавленное изрядной долей эмпатии, рациональное мышление способствует подготовке и реализации кластеризации усилий. Для современного мира сплочённость команды профессионалов играет важную роль в формировании благоприятных перспектив.</p>
+							<div class="item-review__date">10 января 2023</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="contacts">
+			<div class="container">
+				<h2 class="title-section">Контакты</h2>
+				<div class="row">
+					<div class="col-lg-5">
+						<div class="contacts-block">
+							<div class="title-middle">Связаться с нами</div>
+							<p>Наша звездная команда поддержки клиентов готова помочь вам в каждую минуту.</p>
+							<ul class="list-contacts">
+								<li>
+									<a href="#" class="item-contact">
+										<span class="item-contact__icon">
+											<img src="img/ic_contact1.svg" alt="alt">
+										</span>
+										<span>551</span>
+									</a>
+								</li>
+								<li>
+									<a href="tel:+79493105000" class="item-contact">
+										<span class="item-contact__icon">
+											<img src="img/ic_contact2.svg" alt="alt">
+										</span>
+										<span>+7 (949) 310 50 00</span>
+									</a>
+								</li>
+								<li>
+									<a href="mailto:office@khathor.ru" class="item-contact">
+										<span class="item-contact__icon">
+											<img src="img/ic_contact3.svg" alt="alt">
+										</span>
+										<span>office@khathor.ru</span>
+									</a>
+								</li>
+								<li>
+									<div class="item-contact">
+										<span class="item-contact__icon">
+											<img src="img/ic_contact1.svg" alt="alt">
+										</span>
+										<span>Пн-Пт: 9:00-17:00, Сб-Вс: Выходные дни </span>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-7">
+						<div id="map"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-subscribe">
+			<div class="container">
+				<div class="subscribe-main">
+					<div class="row">
+						<div class="col-lg-7">
+							<h2 class="title-middle">Хотите быть в курсе всех новостей?</h2>
+							<p>Подпишитесь на нашу группу Вконтакте и всегда будите в курсе всех событий.</p>
+							<a href="#" class="btn-main btn-main_default"><img src="img/vk.svg" alt="al">Подписаться</a>
+						</div>
+						<div class="col-lg-5">
+							<div class="subscribe-main__image">
+								<img src="img/img_subscribe.png" alt="alt">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-2">
+						<div class="footer__left">
+							<a href="#" class="logo">
+								<img src="img/logo2.svg" alt="alt">
+							</a>
+							<ul class="list-socials">
+								<li><a href="#" target="_blank"><img src="img/soc1.svg" alt="alt"></a></li>
+								<li><a href="#" target="_blank"><img src="img/soc2.svg" alt="alt"></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="footer__contacts">
+							<div class="row">
+								<div class="col-6">
+									<div class="footer-contact">
+										<a href="551" class="title-small">551</a>
+										<div class="footer-contact__descr">Короткий номер</div>
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="footer-contact">
+										<div class="title-small">Пн-Пт: 9:00-17:00</div>
+										<div class="footer-contact__descr">График работы</div>
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="footer-contact">
+										<a href="tel:+79493105000" class="title-small">+7 (949) 310 50 00</a>
+										<div class="footer-contact__descr">Номер телефона</div>
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="footer-contact">
+										<a href="mailto:office@khathor.ru" class="title-small">office@khathor.ru</a>
+										<div class="footer-contact__descr">Электронная почта</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="row">
+							<div class="col-6">
+								<div class="footer__title">О компании</div>
+								<ul class="footer__nav">
+									<li><a href="#">О нас</a></li>
+									<li><a href="#">Документы</a></li>
+									<li><a href="#">Центры страхования</a></li>
+									<li><a href="#">Агентам</a></li>
+									<li><a href="#">Новости</a></li>
+									<li><a href="#">Утраченные бланки</a></li>
+									<li><a href="#">Вакансии</a></li>
+								</ul>
+							</div>
+							<div class="col-6">
+								<div class="footer__title">Программы</div>
+								<ul class="footer__nav">
+									<li><a href="#">Для частных лиц</a></li>
+									<li><a href="#">Для бизнеса</a></li>
+									<li><a href="#">Правила и тарифы</a></li>
+									<li><a href="#">Калькулятор ОСАГО</a></li>
+									<li><a href="#">Вопрос-ответ</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__text">© 2021–2023 Общество с ограниченной ответственностью «Страховая компания «ХАТХОР» Россия, ДНР, Донецк, 121552, пр. Ильича , 3 Лицензия банка России от 01.01.2024: ОС № 0621–05, ПС № 0621. Предложения о страховании по добровольным видам имущественного страхования не являются публичной офертой, решение о заключении договора страхования на конкретных условиях принимается только по соглашению сторон. </div>
+				<div class="footer__bottom">Быстрый доступ к <a href="#">правилам и тарифам</a> и <a href="#">политике по обработке персональных данных.</a></div>
+			</div>
+		</footer>
+		
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	<script src="libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+	<script src="libs/fancybox-master/dist/jquery.fancybox.min.js"></script>
+	<script src="libs/slick-1.5.9/slick/slick.min.js"></script>
+	<script src="libs/scroll2id/PageScroll2id.min.js"></script>
+	<script src="libs/mask/jquery.maskedinput.js"></script>
+	<script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
+	<script src="js/common.js?ver=1.2"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+	<script>
+		$(document).ready(function () {
+			ymaps.ready(init);
+ 
+			function init() {
+				var myMap = new ymaps.Map('map', {
+					center: [48.003454, 37.802688],
+					zoom: 13
+				}, {
+					searchControlProvider: 'yandex#search'
+				});
+
+				myPlacemark1 = new ymaps.Placemark([48.001434, 37.760249], {
+					balloonContent: `
+					<div class="ballon">
+						<div class="ballon__icon">
+							<img src="img/pn.svg" alt="alt">
+						</div>
+						<div class="ballon__content">
+							<span>Отделение №12</span>
+							<strong>ул.Артёма 12А</strong>
+						</div>
+					</div>
+					`
+				}, {
+					iconLayout: 'default#imageWithContent',
+					iconImageHref: 'img/pin.svg',
+					iconImageSize: [64, 75],
+					iconImageOffset: [-32, -75],
+					balloonOffset: [25, -10],
+					hideIconOnBalloonOpen: true,
+				});
+				
+				myPlacemark2 = new ymaps.Placemark([48.011917, 37.775441], {
+					balloonContent: `
+					<div class="ballon">
+						<div class="ballon__icon">
+							<img src="img/pn.svg" alt="alt">
+						</div>
+						<div class="ballon__content">
+							<span>Отделение №12</span>
+							<strong>ул.Артёма 12А</strong>
+						</div>
+					</div>
+					`
+				}, {
+					iconLayout: 'default#imageWithContent',
+					iconImageHref: 'img/pin.svg',
+					iconImageSize: [64, 75],
+					iconImageOffset: [-32, -75],
+					balloonOffset: [25, -10],
+					hideIconOnBalloonOpen: true,
+				});	
+
+				myPlacemark3 = new ymaps.Placemark([47.995616, 37.804710], {
+					balloonContent: `
+					<div class="ballon">
+						<div class="ballon__icon">
+							<img src="img/pn.svg" alt="alt">
+						</div>
+						<div class="ballon__content">
+							<span>Отделение №12</span>
+							<strong>ул.Артёма 12А</strong>
+						</div>
+					</div>
+					`
+				}, {
+					iconLayout: 'default#imageWithContent',
+					iconImageHref: 'img/pin.svg',
+					iconImageSize: [64, 75],
+					iconImageOffset: [-32, -75],
+					balloonOffset: [25, -10],
+					hideIconOnBalloonOpen: true,
+				});	
+
+				myPlacemark4 = new ymaps.Placemark([48.005947, 37.831271], {
+					balloonContent: `
+					<div class="ballon">
+						<div class="ballon__icon">
+							<img src="img/pn.svg" alt="alt">
+						</div>
+						<div class="ballon__content">
+							<span>Отделение №12</span>
+							<strong>ул.Артёма 12А</strong>
+						</div>
+					</div>
+					`
+				}, {
+					iconLayout: 'default#imageWithContent',
+					iconImageHref: 'img/pin.svg',
+					iconImageSize: [64, 75],
+					iconImageOffset: [-32, -75],
+					balloonOffset: [25, -10],
+					hideIconOnBalloonOpen: true,
+				});	
+
+				myMap.controls.remove('searchControl');
+				myMap.behaviors.disable('scrollZoom');
+				myMap.geoObjects.add(myPlacemark1);
+				myMap.geoObjects.add(myPlacemark2);
+				myMap.geoObjects.add(myPlacemark3);
+				myMap.geoObjects.add(myPlacemark4);
+			}
+		});
+	</script>
+	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>

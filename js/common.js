@@ -18,6 +18,9 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
     $menu.removeClass("fixed").addClass("default");
   }
 
+  		/*animate*/
+		  new WOW().init();
+
 	//плавный скролл
 	$(".navigat li a").mPageScroll2id();
 

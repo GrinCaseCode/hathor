@@ -1866,3 +1866,6 @@ form {
 .item-about_page:hover .title-small {
     color: #1C1E1E;
 }
+.wow {
+	visibility: hidden;
+}

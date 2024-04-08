@@ -15,11 +15,12 @@
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
 	<link rel="stylesheet" href="libs/fontawesome-free-5.12.0-web/css/all.min.css" />
 	<link rel="stylesheet" href="libs/fancybox-master/dist/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="libs/animate/animate.min.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.2" />
-	<link rel="stylesheet" href="css/media.css?ver=1.2" />
+	<link rel="stylesheet" href="css/main.css?ver=1.9" />
+	<link rel="stylesheet" href="css/media.css?ver=1.9" />
 </head>
 <body>
 
@@ -153,14 +154,14 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-7">
-						<ul class="breadcrumbs">
+						<ul class="breadcrumbs fadeIn wow" data-wow-iteration="1" data-wow-delay="0.3s">
 							<li><a href="#">Главная</a></li>
 							<li>Контакты</li>
 						</ul>
-						<h1 class="title-big">Контакты</h1>
+						<h1 class="title-big fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.3s">Контакты</h1>
 					</div>
 					<div class="col-lg-5">
-						<div class="billbord-page__image">
+						<div class="billbord-page__image fadeIn wow" data-wow-iteration="1" data-wow-delay="0.6s">
 							<img src="img/billbord_contacts.png" alt="alt">
 						</div>
 					</div>
@@ -172,7 +173,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-5">
-						<div class="contacts-block">
+						<div class="contacts-block fadeIn wow" data-wow-iteration="1" data-wow-delay="0.3s">
 							<div class="title-middle">Связаться с нами</div>
 							<p>Наша звездная команда поддержки клиентов готова помочь вам в каждую минуту.</p>
 							<ul class="list-contacts">
@@ -212,7 +213,7 @@
 						</div>
 					</div>
 					<div class="col-lg-7">
-						<div id="map"></div>
+						<div id="map" class="fadeIn wow" data-wow-iteration="1" data-wow-delay="0.3s"></div>
 					</div>
 				</div>
 			</div>
@@ -308,8 +309,10 @@
 	<script src="libs/slick-1.5.9/slick/slick.min.js"></script>
 	<script src="libs/scroll2id/PageScroll2id.min.js"></script>
 	<script src="libs/mask/jquery.maskedinput.js"></script>
+	<script src="libs/animate/wow.min.js"></script>
+	<script src="libs/animate/animate-css.js"></script>
 	<script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
-	<script src="js/common.js?ver=1.2"></script>
+	<script src="js/common.js?ver=1.9"></script>
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 	<script>
 		$(document).ready(function () {

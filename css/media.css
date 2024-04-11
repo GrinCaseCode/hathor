@@ -1536,6 +1536,9 @@
         max-width: 343px;
         margin-bottom: 24px;
     }
+    .block-info .title-min.title-min_margin {
+        margin-bottom: 8px;
+    }
 }
 
 /* Small Devices, Tablets */

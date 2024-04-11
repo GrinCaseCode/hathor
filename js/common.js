@@ -70,6 +70,19 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		$(this).parent().siblings(".item-question").find(".item-question__content").slideUp(200);
 	  });
 
+	  $(".item-inner .link-page").click(function(e) {
+		e.preventDefault();
+		$(this).parents(".item-inner").siblings(".item-inner").find(".wrap-map").slideUp(200);
+		$(this).parents(".item-inner").siblings(".item-inner").find(".link-page").html("Показать на карте");
+		if ($(this).siblings(".wrap-map").is(":hidden")) {
+			$(this).siblings(".wrap-map").slideDown(200);
+			$(this).html("Закрыть карту");
+		} else {
+			$(this).siblings(".wrap-map").slideUp(200);
+			$(this).html("Показать на карте");
+		}
+	});
+
 	//слайдер
 
 	$('.slider-reviews').slick({

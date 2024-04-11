@@ -232,6 +232,34 @@
     .wrapper_page .breadcrumbs {
         padding: 40px 0;
     }
+    .unit-feature {
+        margin-top: 11px;
+        margin-right: 14px;
+        font-size: 14px;
+    }
+    .item-inner .link-page {
+        margin-top: 18px;
+    }
+    .item-inner {
+        margin-bottom: 25px;
+    }
+    .descr-title {
+        margin: 16px 0;
+    }
+    .item-info {
+        padding: 19px;
+        margin-bottom: 13px;
+    }
+    .item-info__icon {
+        width: 77px;
+        height: 77px;
+    }
+    .billbord-page_agents {
+        min-height: 463px;
+    }
+    .block-info .item-question .title-min {
+        max-width: 436px;
+    }
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -439,6 +467,34 @@
     }
     .wrapper_page .breadcrumbs {
         padding: 30px 0;
+    }
+    .billbord-page_agents {
+        min-height: 366px;
+    }
+    .block-info .title-small, .block-info .title-min {
+        margin-bottom: 11px;
+    }
+    .block-info p + .title-small {
+        padding-top: 5px;
+    }
+    .block-info__item {
+        padding-top: 5px;
+        margin-right: 20px;
+    }
+    .block-info p {
+        margin-bottom: 6px;
+    }
+    .billbord-page_osago {
+        padding-bottom: 50px;
+    }
+    .billbord-page_business .title-big {
+        max-width: 315px;
+    }
+    .text-small {
+        font-size: 14px;
+    }
+    .page-error p {
+        max-width: 400px;
     }
 }
 
@@ -1248,8 +1304,237 @@
     .recommendation .title-section {
         margin-bottom: 32px;
     }
-    .billbord-page_contacts, .billbord-page_single {
+    .billbord-page_tariffs,
+    .billbord-page_contacts,
+    .billbord-page_single {
         background-position: 16% 50%;
+    }
+    .billbord-page_insurance .billbord-page__image img {
+        width: 302px;
+        margin-right: -62px;
+    }
+    .tabs-wrap_insurance  {
+        margin-bottom: 48px;
+    }
+    .tabs-wrap_insurance .tabs {
+        padding: 16px 44px;
+        width: 100%;
+        display: block;
+    }
+    .tabs-wrap_insurance .tabs li {
+        margin-bottom: 16px;
+        margin-right: 0;
+    }
+    .tabs-wrap_insurance .tabs li:last-child {
+        margin-bottom: 0;
+    }
+    .tabs-wrap_insurance .tabs li a {
+        padding: 0 5px;
+    }
+    .page-inner_insurance .item-question__content {
+        font-size: 18px;
+    }
+    .features-units {
+        display: block;
+    }
+    .unit-feature {
+        margin-right: 0;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .page-inner_insurance .link-page {
+        font-size: 16px;
+    }
+    .map-page {
+        height: 330px;
+    }
+    .unit-feature {
+        display: flex;
+    }
+    .unit-feature span,
+    .unit-feature a {
+        margin-left: 4px;
+    }
+    .billbord-page_agents .billbord-page__image img {
+        width: 375px;
+    }
+    .billbord-page_agents .billbord-page__image {
+        margin-top: 0;
+    }
+    .descr-title {
+        margin-bottom: 32px;
+    }
+    .block-info {
+        padding: 16px;
+        margin-top: 16px;
+    }
+    .item-info__icon {
+        width: 80px;
+        height: 80px;
+        margin-right: 8px;
+    }
+    .block-info .title-small {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .block-info .title-small, .block-info .title-min {
+        margin-bottom: 16px;
+    }
+    .block-info p {
+        margin-bottom: 8px;
+    }
+    .block-info__item .title-small {
+        margin-bottom: 4px;
+    }
+    .block-info__item {
+        margin-right: 0;
+    }
+    .block-info__contacts {
+        display: block;
+    }
+    .item-info {
+        padding: 16px;
+        margin-bottom: 16px;
+    }
+    .billbord-page_tariffs .billbord-page__image img {
+        width: 138px;
+        margin-right: 0;
+    }
+    .billbord-page_tariffs .title-big {
+        max-width: 147px;
+    }
+    .billbord-page_tariffs .billbord-page__image {
+        margin-top: -90px;
+        margin-bottom: -23px;
+    }
+    .billbord-page_tariffs {
+        min-height: 253px;
+    }
+    .block-documents .item-document {
+        display: flex;
+        padding: 0;
+        position: relative;
+    }
+    .block-documents .item-document .icon-page {
+        position: relative;
+    }
+    .block-documents > .title-min {
+        font-weight: 600;
+    }
+    .block-documents {
+        padding: 16px;
+    }
+    .billbord-page_tariffs + * .item-document {
+        align-items: flex-start;
+    }
+    .block-documents .item-document .title-min {
+        margin: 0;
+    }
+    .billbord-page_individuals .billbord-page__image img {
+        width: 265px;
+        margin-right: -70px;
+    }
+    .billbord-page_individuals .billbord-page__image {
+        margin-top: 0;
+    }
+    .item-individuals__image {
+        margin-top: 24px;
+        position: relative;
+    }
+    .item-individuals__image img {
+        max-width: 100%;
+        height: auto;
+    }
+    .item-individuals {
+        padding: 16px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .item-individuals .title-min {
+        margin-top: 24px;
+    }
+    .item-individuals__buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .item-individuals__buttons .btn-main {
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+    .item-individuals__image {
+        margin-right: -16px;
+        margin-bottom: -16px;
+    }
+    .item-individuals__info {
+        bottom: 24px;
+        top: auto;
+    }
+    .billbord-page_osago .billbord-page__image img {
+        width: 342px;
+    }
+    .billbord-page_osago {
+        padding-bottom: 34px;
+    }
+    .tabs-block {
+        padding: 16px;
+    }
+    .tabs-block .title-middle {
+        margin-bottom: 16px;
+    }
+    .block-info .title-small.title-small_min {
+        font-size: 18px;
+        line-height: 150%;
+    }
+    .block-info .title-middle {
+        margin-top: 32px;
+    }
+    .block-info .item-question .title-min {
+        font-size: 18px;
+        line-height: 21px;
+        margin-right: 20px;
+    }
+    .item-individuals .row {
+        justify-content: center;
+    }
+    .billbord-page_business .billbord-page__image img {
+        width: 262px;
+        margin-right: -40px;
+    }
+    .billbord-page_business .billbord-page__image {
+        margin-top: 12px;
+    }
+    .text-small {
+        font-size: 16px;
+    }
+    .block-info .text-small + .title-small {
+        margin-top: 32px;
+    }
+    ol.list-numbers li {
+        margin-bottom: 16px;
+    }
+    .block-info__unit .title-small {
+        font-size: 18px;
+        line-height: 150%;
+        margin-bottom: 8px;
+    }
+    .image-error img {
+        width: 282px;
+    }
+    .image-error {
+        margin-bottom: 32px;
+    }
+    .page-error {
+        padding-top: 132px;
+        padding-bottom: 56px;
+        background-image: url(../img/bg_error_mob.jpg);
+    }
+    .title-error {
+        font-size: 32px;
+        line-height: 38px;
+    }
+    .page-error p {
+        max-width: 343px;
+        margin-bottom: 24px;
     }
 }
 
@@ -1264,7 +1549,12 @@
         height: 150px;
     }
 }
-
+@media only screen and (max-width : 370px) {
+    .title-error {
+        font-size: 30px;
+        line-height: 36px;
+    }
+}
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
 

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Заголовок</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
+	<link rel="stylesheet" href="libs/fontawesome-free-5.12.0-web/css/all.min.css" />
+	<link rel="stylesheet" href="libs/fancybox-master/dist/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="libs/animate/animate.min.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/main.css?ver=1.10" />
+	<link rel="stylesheet" href="css/media.css?ver=1.10" />
+</head>
+<body>
+
+	<div class="wrapper">
+
+		<div class="buttons-fixed">
+			<a href="#" class="btn-fixed">
+				<span class="btn-fixed__icon">
+					<img src="img/btn_fixed1.svg" alt="alt">
+				</span>
+				<div class="btn-fixed__title">Попали в ДТП</div>
+			</a>
+			<a href="#" class="btn-fixed btn-fixed_search">
+				<span class="btn-fixed__icon">
+					<img src="img/btn_fixed2.svg" alt="alt">
+				</span>
+				<div class="btn-fixed__title">Поиск</div>
+			</a>
+			<a href="#" class="btn-fixed btn-fixed_menu">
+				<span class="sandwich"></span>
+				<div class="btn-fixed__title">Меню</div>
+			</a>
+			<a href="#" class="btn-fixed">
+				<span class="btn-fixed__icon">
+					<img src="img/btn_fixed3.svg" alt="alt">
+				</span>
+				<div class="btn-fixed__title">Центры</div>
+			</a>
+			<a href="#" class="btn-fixed">
+				<span class="btn-fixed__icon">
+					<img src="img/btn_fixed4.svg" alt="alt">
+				</span>
+				<div class="btn-fixed__title">Калькулятор</div>
+			</a>
+		</div>
+
+		<div class="menu-mobile">
+			<div class="menu-mobile__close"></div>
+			<div class="menu-mobile__title">Меню</div>
+			<ul class="tabs-menu">
+				<li class="active"><a href="#tab_menu1">О компании</a></li>
+				<li><a href="#tab_menu2">Программы</a></li>
+			</ul>
+			<div class="tab-container-menu">
+				<div class="tab-pane-menu" id="tab_menu1">
+					<ul class="menu-mobile__list">
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Документы</a></li>
+						<li><a href="#">Центры страхования</a></li>
+						<li><a href="#">Агентам</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Утраченные бланки</a></li>
+						<li><a href="#">Вакансии</a></li>
+						<li><a href="#">Обратная связь</a></li>
+					</ul>
+				</div>
+				<div class="tab-pane-menu" id="tab_menu2">
+					<ul class="menu-mobile__list">
+						<li><a href="#">Для частных лиц</a></li>
+						<li><a href="#">Для бизнеса</a></li>
+						<li><a href="#">Правила и тарифы</a></li>
+						<li><a href="#">Агентам</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Калькулятор ОСАГО</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="menu-mobile__buttons">
+				<a href="#" class="btn-main btn-main_page"><img src="img/ic_alert.svg" alt="alt">Попали в ДТП</a>
+				<a href="#" class="btn-main"><img src="img/ic_login.svg" alt="alt">Войти</a>
+			</div>
+		</div>
+
+		<div class="search-modal">
+			<div class="container">
+				<div class="search-modal__head">
+					<div class="search-modal__title">Поиск по сайту</div>
+					<div class="search-modal__close"></div>
+				</div>
+				<div class="form-search">
+					<input type="search" placeholder="Введите ваш запрос">
+					<div class="form-search__recomendation">
+						<div class="title-small">Популярные запросы</div>
+						<ul>
+							<li><a href="#">Популярные запросы</a></li>
+							<li><a href="#">ОСАГО</a></li>
+							<li><a href="#">Что делать если попал в ДТП</a></li>
+							<li><a href="#">Рассчитать стоимость ОСАГО</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<header class="header">
+			<div class="container">
+				<div class="header__wrap">
+					<a href="#" class="logo">
+						<img src="img/logo.svg" alt="alt">
+					</a>
+					<ul class="menu">
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Документы</a></li>
+						<li><a href="#">Утраченные бланки</a></li>
+						<li><a href="#">Карьера</a></li>
+						<li><a href="#">Вопрос-ответ</a></li>
+						<li><a href="#">Обратная связь</a></li>
+					</ul>
+					<a href="#" class="link-header"><img src="img/company.svg" alt="alt"><span>Центры страхования</span></a>
+					<a href="#" class="link-search"><img src="img/search.svg" alt="alt"><span>Поиск</span></a>
+				</div>
+				<div class="header__bottom">
+					<ul class="menu">
+						<li><a href="#">Для частных лиц</a></li>
+						<li><a href="#">Для бизнеса</a></li>
+						<li><a href="#">Правила и тарифы</a></li>
+						<li><a href="#">Агентам</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Калькулятор ОСАГО</a></li>
+					</ul>
+					<div class="header__buttons">
+						<a href="#" class="btn-main btn-main_page"><img src="img/ic_alert.svg" alt="alt">Попали в ДТП</a>
+						<a href="#" class="btn-main"><img src="img/ic_login.svg" alt="alt">Войти</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="page-error">
+			<div class="container">
+				<div class="image-error">
+					<img src="img/image_error.png" alt="alt">
+				</div>
+				<div class="title-error">Страница не найдена</div>
+				<p>Страница, на которую вы пытаетесь перейти не найдена. Возможно, вы ввели неправильный адрес, или страница была удалена.</p>
+				<a href="#" class="btn-main btn-main_default">Вернуться на главную страницу</a>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-2">
+						<div class="footer__left">
+							<a href="#" class="logo">
+								<img src="img/logo2.svg" alt="alt">
+							</a>
+							<ul class="list-socials">
+								<li><a href="#" target="_blank"><img src="img/soc1.svg" alt="alt"></a></li>
+								<li><a href="#" target="_blank"><img src="img/soc2.svg" alt="alt"></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="footer__contacts">
+							<div class="row">
+								<div class="col-6">
+									<div class="footer-contact">
+										<a href="551" class="title-small">551</a>
+										<div class="footer-contact__descr">Короткий номер</div>
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="footer-contact">
+										<div class="title-small">Пн-Пт: 9:00-17:00</div>
+										<div class="footer-contact__descr">График работы</div>
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="footer-contact">
+										<a href="tel:+79493105000" class="title-small">+7 (949) 310 50 00</a>
+										<div class="footer-contact__descr">Номер телефона</div>
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="footer-contact">
+										<a href="mailto:office@khathor.ru" class="title-small">office@khathor.ru</a>
+										<div class="footer-contact__descr">Электронная почта</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="row">
+							<div class="col-6">
+								<div class="footer__title">О компании</div>
+								<ul class="footer__nav">
+									<li><a href="#">О нас</a></li>
+									<li><a href="#">Документы</a></li>
+									<li><a href="#">Центры страхования</a></li>
+									<li><a href="#">Агентам</a></li>
+									<li><a href="#">Новости</a></li>
+									<li><a href="#">Утраченные бланки</a></li>
+									<li><a href="#">Вакансии</a></li>
+								</ul>
+							</div>
+							<div class="col-6">
+								<div class="footer__title">Программы</div>
+								<ul class="footer__nav">
+									<li><a href="#">Для частных лиц</a></li>
+									<li><a href="#">Для бизнеса</a></li>
+									<li><a href="#">Правила и тарифы</a></li>
+									<li><a href="#">Калькулятор ОСАГО</a></li>
+									<li><a href="#">Вопрос-ответ</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__text">© 2021–2023 Общество с ограниченной ответственностью «Страховая компания «ХАТХОР» Россия, ДНР, Донецк, 121552, пр. Ильича , 3 Лицензия банка России от 01.01.2024: ОС № 0621–05, ПС № 0621. Предложения о страховании по добровольным видам имущественного страхования не являются публичной офертой, решение о заключении договора страхования на конкретных условиях принимается только по соглашению сторон. </div>
+				<div class="footer__bottom">Быстрый доступ к <a href="#">правилам и тарифам</a> и <a href="#">политике по обработке персональных данных.</a></div>
+			</div>
+		</footer>
+		
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	<script src="libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+	<script src="libs/fancybox-master/dist/jquery.fancybox.min.js"></script>
+	<script src="libs/slick-1.5.9/slick/slick.min.js"></script>
+	<script src="libs/scroll2id/PageScroll2id.min.js"></script>
+	<script src="libs/mask/jquery.maskedinput.js"></script>
+	<script src="libs/animate/wow.min.js"></script>
+	<script src="libs/animate/animate-css.js"></script>
+	<script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
+	<script src="js/common.js?ver=1.10"></script>
+	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>

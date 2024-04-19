@@ -24,6 +24,13 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	//плавный скролл
 	$(".navigat li a").mPageScroll2id();
 
+	 /*input file*/
+	 $("input[type='file']").change(function(){
+		var filename_text = $(this).parent().siblings(".name-upload");
+		var filename = $(this).val().replace(/.*\\/, "");
+		filename_text.html(filename);
+	});
+
 
 	//кнопка sandwich
 	$(".btn-fixed_menu").click(function(e) {
@@ -146,6 +153,7 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		});
 
 	$(".input-phone").mask("+7 (999) 999-99-99");
+	
 
 
 	 // стайлер для select

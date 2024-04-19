@@ -496,6 +496,13 @@
     .page-error p {
         max-width: 400px;
     }
+
+    .item-input label, 
+    .item-input .jq-selectbox__select-text, 
+    .item-input input, 
+    .item-input textarea {
+        font-size: 16px;
+    }
 }
 
 /* Medium Devices, Desktops */
@@ -1538,6 +1545,38 @@
     }
     .block-info .title-min.title-min_margin {
         margin-bottom: 8px;
+    }
+    .content-feedback .title-section {
+        font-size: 24px;
+    }
+    .item-input label, 
+    .item-input .jq-selectbox__select-text, 
+    .item-input input,
+    .item-input textarea {
+        font-size: 18px;
+    }
+    .content-feedback {
+        padding: 16px;
+        margin: 0;
+    }
+    .bottom-form {
+        flex-direction: column;
+        align-items: center;
+    }
+    .bottom-form .checkbox {
+        width: 262px;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    .bottom-form .btn-main {
+        width: 100%;
+    }
+    .hidden-mob {
+        display: none !important;
+    }
+    .page-feedback {
+        padding-bottom: 56px;
     }
 }
 

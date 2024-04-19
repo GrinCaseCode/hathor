@@ -24,7 +24,7 @@
 </head>
 <body>
 
-	<div class="wrapper">
+	<div class="wrapper wrapper_page">
 
 		<div class="buttons-fixed">
 			<a href="#" class="btn-fixed">
@@ -120,7 +120,7 @@
 			<div class="container">
 				<div class="header__wrap">
 					<a href="#" class="logo">
-						<img src="img/logo.svg" alt="alt">
+						<img src="img/logo_dark.svg" alt="alt">
 					</a>
 					<ul class="menu">
 						<li><a href="#">О нас</a></li>
@@ -150,70 +150,166 @@
 			</div>
 		</header>
 
-		<section class="billbord-page billbord-page_contacts">
+		<section class="page-feedback">
 			<div class="container">
-				<div class="row">
-					<div class="col-lg-7">
-						<ul class="breadcrumbs fadeIn wow" data-wow-iteration="1" data-wow-delay="0.3s">
-							<li><a href="#">Главная</a></li>
-							<li>Контакты</li>
-						</ul>
-						<h1 class="title-big fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.3s">Контакты</h1>
-					</div>
-					<div class="col-lg-5">
-						<div class="billbord-page__image fadeIn wow" data-wow-iteration="1" data-wow-delay="0.6s">
-							<img src="img/billbord_contacts.png" alt="alt">
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="page-inner">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-5">
-						<div class="contacts-block fadeIn wow" data-wow-iteration="1" data-wow-delay="0.3s">
-							<div class="title-middle">Связаться с нами</div>
-							<p>Наша звездная команда поддержки клиентов готова помочь вам в каждую минуту.</p>
-							<ul class="list-contacts">
-								<li>
-									<a href="#" class="item-contact">
-										<span class="item-contact__icon">
-											<img src="img/ic_contact1.svg" alt="alt">
-										</span>
-										<span>551</span>
-									</a>
-								</li>
-								<li>
-									<a href="tel:+79493105000" class="item-contact">
-										<span class="item-contact__icon">
-											<img src="img/ic_contact2.svg" alt="alt">
-										</span>
-										<span>+7 (949) 310 50 00</span>
-									</a>
-								</li>
-								<li>
-									<a href="mailto:office@khathor.ru" class="item-contact">
-										<span class="item-contact__icon">
-											<img src="img/ic_contact3.svg" alt="alt">
-										</span>
-										<span>office@khathor.ru</span>
-									</a>
-								</li>
-								<li>
-									<div class="item-contact">
-										<span class="item-contact__icon">
-											<img src="img/ic_contact4.svg" alt="alt">
-										</span>
-										<span>Пн-Пт: 9:00-17:00, Сб-Вс: Выходные дни </span>
+				<ul class="breadcrumbs fadeIn wow" data-wow-iteration="1" data-wow-delay="0.3s">
+					<li><a href="#">Главная</a></li>
+					<li>Обратная связь</li>
+				</ul>
+				<div class="wrapper-section">
+					<div class="content-feedback fadeIn wow" data-wow-iteration="1" data-wow-delay="0.3s">
+						<h1 class="title-section">Обратная связь</h1>
+						<div class="descr-title">Оставьте официальное обращение в компанию «Хатхор»</div>
+						<form>
+							<div class="row">
+								<div class="col-lg-4 col-md-6">
+									<div class="item-input">
+										<input type="text" value="Иванов">
+										<div class="item-input__placeholder">Фамилия</div>
 									</div>
-								</li>
-							</ul>
-						</div>
+								</div>
+								<div class="col-lg-4 col-md-6">
+									<div class="item-input">
+										<input type="text" value="Иван">
+										<div class="item-input__placeholder">Имя</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6">
+									<div class="item-input">
+										<input type="text" value="Иванович">
+										<div class="item-input__placeholder">Отчество</div>
+									</div>
+								</div>
+							</div>
+							<div class="title-middle">Контактные данные</div>
+							<div class="row">
+								<div class="col-lg-4 col-md-6">
+									<div class="item-input">
+										<input type="email" value="Mail@mail.com">
+										<div class="item-input__placeholder">Электронная почта</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6">
+									<div class="item-input">
+										<input type="text" class="input-phone" value="+7 949 777 77 78">
+										<div class="item-input__placeholder">Мобильный телефон</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6">
+									<div class="item-input">
+										<select>
+											<option value="1">ДНР</option>
+											<option value="1">ДНР</option>
+											<option value="1">ДНР</option>
+											<option value="1">ДНР</option>
+										</select>
+										<div class="item-input__placeholder">Регион</div>
+									</div>
+								</div>
+							</div>
+							<div class="title-middle">Обращение</div>
+							<div class="row">
+								<div class="col-lg-4 col-md-6">
+									<div class="item-input">
+										<select>
+											<option value="1">Задать вопрос</option>
+											<option value="1">Задать вопрос</option>
+											<option value="1">Задать вопрос</option>
+											<option value="1">Задать вопрос</option>
+										</select>
+										<div class="item-input__placeholder">Тема обращения</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6">
+									<div class="item-input">
+										<select>
+											<option value="1">В Хатхор</option>
+											<option value="1">В Хатхор</option>
+											<option value="1">В Хатхор</option>
+											<option value="1">В Хатхор</option>
+										</select>
+										<div class="item-input__placeholder">Где вы застрахованы?</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6">
+									<div class="item-input">
+										<input type="text" value="123315125621">
+										<div class="item-input__placeholder">Номер полиса</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="item-input">
+										<textarea></textarea>
+										<div class="item-input__placeholder">Сообщение</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="item-input">
+										<div class="file-upload">
+											<label><input type="file" name="file">Добавить документ <img src="img/doc.svg" alt="alt"></label>
+											<div class="name-upload"></div>
+										</div>
+										<div class="item-input__placeholder">Документы</div>
+									</div>
+								</div>
+							</div>
+							<div class="bottom-form">
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" required="required" checked="checked" />
+										<span>Я даю согласие на обработку персональных данных</span>
+									</label>
+								</div>
+								<input type="submit" class="btn-main" value="Продолжить">
+							</div>
+						</form>
 					</div>
-					<div class="col-lg-7">
-						<div id="map" class="fadeIn wow" data-wow-iteration="1" data-wow-delay="0.3s"></div>
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="contacts-block hidden-mob fadeIn wow" data-wow-iteration="1" data-wow-delay="0.3s">
+								<div class="title-middle">Служба доверия</div>
+								<p>Ключевые ценности «Хатхор» — это открытость, честность и клиентоцентричность. Мы стремимся поддерживать наших клиентов и партнеров в любой ситуации.Если вы столкнулись со злоупотреблением полномочиями или другими нарушениями, сообщите об этом в Службу доверия. Служба гарантирует анонимность и конфиденциальность.</p>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="contacts-block hidden-mob fadeIn wow" data-wow-iteration="1" data-wow-delay="0.3s">
+								<div class="title-small">Способы обратной связи</div>
+								<ul class="list-contacts">
+									<li>
+										<a href="#" class="item-contact">
+											<span class="item-contact__icon">
+												<img src="img/ic_contact1.svg" alt="alt">
+											</span>
+											<span>551</span>
+										</a>
+									</li>
+									<li>
+										<a href="tel:+79493105000" class="item-contact">
+											<span class="item-contact__icon">
+												<img src="img/ic_contact2.svg" alt="alt">
+											</span>
+											<span>+7 (949) 310 50 00</span>
+										</a>
+									</li>
+									<li>
+										<a href="mailto:office@khathor.ru" class="item-contact">
+											<span class="item-contact__icon">
+												<img src="img/ic_contact3.svg" alt="alt">
+											</span>
+											<span>office@khathor.ru</span>
+										</a>
+									</li>
+									<li>
+										<div class="item-contact">
+											<span class="item-contact__icon">
+												<img src="img/ic_contact4.svg" alt="alt">
+											</span>
+											<span>Пн-Пт: 9:00-17:00, Сб-Вс: Выходные дни </span>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -313,112 +409,6 @@
 	<script src="libs/animate/animate-css.js"></script>
 	<script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
 	<script src="js/common.js?ver=1.9"></script>
-	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-	<script>
-		$(document).ready(function () {
-			ymaps.ready(init);
- 
-			function init() {
-				var myMap = new ymaps.Map('map', {
-					center: [48.003454, 37.802688],
-					zoom: 13
-				}, {
-					searchControlProvider: 'yandex#search'
-				});
-
-				myPlacemark1 = new ymaps.Placemark([48.001434, 37.760249], {
-					balloonContent: `
-					<div class="ballon">
-						<div class="ballon__icon">
-							<img src="img/pn.svg" alt="alt">
-						</div>
-						<div class="ballon__content">
-							<span>Отделение №12</span>
-							<strong>ул.Артёма 12А</strong>
-						</div>
-					</div>
-					`
-				}, {
-					iconLayout: 'default#imageWithContent',
-					iconImageHref: 'img/pin.svg',
-					iconImageSize: [64, 75],
-					iconImageOffset: [-32, -75],
-					balloonOffset: [25, -10],
-					hideIconOnBalloonOpen: true,
-				});
-				
-				myPlacemark2 = new ymaps.Placemark([48.011917, 37.775441], {
-					balloonContent: `
-					<div class="ballon">
-						<div class="ballon__icon">
-							<img src="img/pn.svg" alt="alt">
-						</div>
-						<div class="ballon__content">
-							<span>Отделение №12</span>
-							<strong>ул.Артёма 12А</strong>
-						</div>
-					</div>
-					`
-				}, {
-					iconLayout: 'default#imageWithContent',
-					iconImageHref: 'img/pin.svg',
-					iconImageSize: [64, 75],
-					iconImageOffset: [-32, -75],
-					balloonOffset: [25, -10],
-					hideIconOnBalloonOpen: true,
-				});	
-
-				myPlacemark3 = new ymaps.Placemark([47.995616, 37.804710], {
-					balloonContent: `
-					<div class="ballon">
-						<div class="ballon__icon">
-							<img src="img/pn.svg" alt="alt">
-						</div>
-						<div class="ballon__content">
-							<span>Отделение №12</span>
-							<strong>ул.Артёма 12А</strong>
-						</div>
-					</div>
-					`
-				}, {
-					iconLayout: 'default#imageWithContent',
-					iconImageHref: 'img/pin.svg',
-					iconImageSize: [64, 75],
-					iconImageOffset: [-32, -75],
-					balloonOffset: [25, -10],
-					hideIconOnBalloonOpen: true,
-				});	
-
-				myPlacemark4 = new ymaps.Placemark([48.005947, 37.831271], {
-					balloonContent: `
-					<div class="ballon">
-						<div class="ballon__icon">
-							<img src="img/pn.svg" alt="alt">
-						</div>
-						<div class="ballon__content">
-							<span>Отделение №12</span>
-							<strong>ул.Артёма 12А</strong>
-						</div>
-					</div>
-					`
-				}, {
-					iconLayout: 'default#imageWithContent',
-					iconImageHref: 'img/pin.svg',
-					iconImageSize: [64, 75],
-					iconImageOffset: [-32, -75],
-					balloonOffset: [25, -10],
-					hideIconOnBalloonOpen: true,
-				});	
-
-				myMap.controls.remove('searchControl');
-				myMap.behaviors.disable('scrollZoom');
-				myMap.geoObjects.add(myPlacemark1);
-				myMap.geoObjects.add(myPlacemark2);
-				myMap.geoObjects.add(myPlacemark3);
-				myMap.geoObjects.add(myPlacemark4);
-			}
-		});
-	</script>
 	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
